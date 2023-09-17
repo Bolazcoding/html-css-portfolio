@@ -4,7 +4,8 @@
 }
 body{
     background-image: url(./images/black-cat.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
 }
 .site-title{
     margin-top: 25px;
@@ -22,9 +23,10 @@ h1{
     display: flex;
     justify-content: space-between;
 }
-@media (max-width:700px) {
+@media (max-width:700px){
     .container-nav{
         flex-direction: column;
+        justify-content: center;
     }
 }
 nav ul{
@@ -32,18 +34,20 @@ nav ul{
     display: flex;
     margin-top: 35px;
 }
-@media (max-width:700px) {
+@media (max-width:700px){
     nav ul{
         flex-direction: row;
         justify-content: center;
         padding-right: 30px;
-        flex-wrap: nowrap;
+        text-align: center;
+        margin-right: 30px;
+        /* flex-wrap: nowrap; */
     }
 }
 nav li{
     margin-left: 30px;
 }
-@media (max-width:700px) {
+@media (max-width:700px){
     nav li{
         margin-left: 10px;
     }
@@ -62,7 +66,7 @@ nav a:focus{
 .button-container{
     margin-top: 25px;
 }
-@media (max-width:700px) {
+@media (max-width:700px){
     .button-container{
         display: flex;
         flex-direction: column;
@@ -83,9 +87,9 @@ p{
 }
 .article-featured{
     margin-top: 5em;
-    margin-left: 4em;
+    /* margin-left: 4em; */
 }
-@media (max-width:700px) {
+@media (max-width:700px){
     .article-featured{
         display: flex;
         flex-direction: column;
@@ -96,7 +100,7 @@ p{
 .article-info{
     font-size: 4em;
 }
-@media (max-width:700px) {
+@media (max-width:700px){
     .article-info{
         margin-top: 1em;
         font-size: 3em;
