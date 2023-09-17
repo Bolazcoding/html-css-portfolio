@@ -1,0 +1,119 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+body{
+    background-image: url(./images/black-cat.jpg);
+    background-size: 100%;
+}
+.site-title{
+    margin-top: 25px;
+}
+h1{
+    color: white;
+    font-size: 2em;
+}
+.container{
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:700px) {
+    .container-nav{
+        flex-direction: column;
+    }
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-top: 35px;
+}
+@media (max-width:700px) {
+    nav ul{
+        flex-direction: row;
+        justify-content: center;
+        padding-right: 30px;
+        flex-wrap: nowrap;
+    }
+}
+nav li{
+    margin-left: 30px;
+}
+@media (max-width:700px) {
+    nav li{
+        margin-left: 10px;
+    }
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover,
+nav a:focus{
+    color: red;
+}
+.current-page{
+    color: red;
+}
+.button-container{
+    margin-top: 25px;
+}
+@media (max-width:700px) {
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+button{
+    /* margin-left: 1em; */
+    background-color: red;
+    border: solid red;
+    border-radius: 20px ;
+    padding: 1em 2em;
+    color: white;
+    font-size: 1em;
+}
+p{
+    color: white;
+}
+.article-featured{
+    margin-top: 5em;
+    margin-left: 4em;
+}
+@media (max-width:700px) {
+    .article-featured{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+    }
+}
+.article-info{
+    font-size: 4em;
+}
+@media (max-width:700px) {
+    .article-info{
+        margin-top: 1em;
+        font-size: 3em;
+    }
+}
+.article-body{
+    font-size: 18px;
+    margin-top: 1em;
+    opacity: 80%;
+}
+.article-button{
+    margin-top: 2em;
+}
+footer{
+    margin-top: 10em;
+    text-align: center;
+}
+.footer-text{
+    opacity: 80%;
+}
